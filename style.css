@@ -1,0 +1,145 @@
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background-color: #f8fafc;
+    color: #334155;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.main {
+    height: 670px;
+    width: 1000px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+
+#output {
+    height: 300px;
+    width: 100%;
+    background-color: #ffffff;
+    border: 2px solid #e2e8f0;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 700;
+    color: #1e293b;
+    cursor: pointer;
+    user-select: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    transition: transform 0.15s cubic-bezier(0.4, 0, 0.2, 1), 
+                box-shadow 0.15s cubic-bezier(0.4, 0, 0.2, 1), 
+                border-color 0.15s ease,
+                background-color 0.15s ease;
+}
+
+
+#output:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+    border-color: #94a3b8;
+    background-color: #fdfdfd;
+}
+
+
+#output:active {
+    transform: translateY(1px) scale(0.99);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    background-color: #f1f5f9;
+}
+
+
+#count {
+    height: 50px;
+    width: 100%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: #64748b;
+    margin-top: 10px;
+}
+
+
+#answerInput {
+    width: 100%;
+}
+
+
+#userInput {
+    width: 70%;
+    padding: 12px 20px;
+    font-size: 24px;
+    text-align: center;
+    font-family: inherit;
+    border: 2px solid #cbd5e1;
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+#userInput:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+
+.stats {
+    gap: 60px;
+    display: flex;
+    height: 140px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+#correct {
+    height: 100px;
+    width: 400px;
+    border: 2px solid #bbf7d0;
+    background-color: #f0fdf4;
+    color: #16a34a;
+    font-size: 30px;
+    font-weight: 700;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(22, 163, 74, 0.05);
+}
+
+
+#incorrect {
+    height: 100px;
+    width: 400px;
+    border: 2px solid #fecaca;
+    background-color: #fef2f2;
+    color: #dc2626;
+    font-size: 30px;
+    font-weight: 700;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(220, 38, 38, 0.05);
+}
